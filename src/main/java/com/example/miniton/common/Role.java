@@ -1,4 +1,4 @@
-package com.example.miniton.common.domain;
+package com.example.miniton.common;
 
 public enum Role {
     ROLE_USER("ROLE_USER"),

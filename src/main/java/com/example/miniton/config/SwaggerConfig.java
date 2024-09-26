@@ -14,7 +14,7 @@ import io.swagger.v3.oas.models.info.Info;
 
 @OpenAPIDefinition(servers = {@Server(url = "/", description = "default generated url")})
 @Configuration
-public class SwaggerConfiguration {
+public class SwaggerConfig {
 
     @Bean
     public OpenAPI springOpenAPI(){
@@ -42,7 +42,10 @@ public class SwaggerConfiguration {
         return new Info()
                 .title("MINITON API Document")
                 .version("0.1")
-                .description("MINITON 프로젝트 API 명세서 입니다.");
+                .description("OAuth2 로그인 하이퍼 링크 입니다:<br><br>"
+                        + "[Login with Naver](http://localhost:8080/oauth2/authorization/naver)&nbsp;&nbsp;&nbsp;&nbsp;"
+                        + "[Login with Google](http://localhost:8080/oauth2/authorization/google)&nbsp;&nbsp;&nbsp;&nbsp;"
+                        + "[Login with Kakao](http://localhost:8080/oauth2/authorization/kakao)");
     }
 
 }
